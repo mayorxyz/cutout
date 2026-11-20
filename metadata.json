@@ -1,0 +1,6 @@
+{
+  "name": "Cutout",
+  "description": "Free, private AI background remover that runs completely inside your browser. No uploads, no signup, full-resolution transparent PNG.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

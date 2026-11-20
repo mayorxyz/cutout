@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="wallGrad" x1="0" y1="0" x2="800" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#273447" />
+      <stop offset="55%" stop-color="#1d2736" />
+      <stop offset="100%" stop-color="#141c27" />
+    </linearGradient>
+    <linearGradient id="lightBeam" x1="120" y1="0" x2="540" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#93c5fd" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="tableGrad" x1="0" y1="395" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#47382b" />
+      <stop offset="100%" stop-color="#251d17" />
+    </linearGradient>
+    <linearGradient id="bodyMetal" x1="190" y1="180" x2="610" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#354052" />
+      <stop offset="50%" stop-color="#1f2633" />
+      <stop offset="100%" stop-color="#131822" />
+    </linearGradient>
+    <linearGradient id="topPlate" x1="195" y1="168" x2="605" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="50%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+    <radialGradient id="lensGlass" cx="0.4" cy="0.38" r="0.6">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#1d4ed8" stop-opacity="0.7" />
+      <stop offset="75%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+    <radialGradient id="dropShadow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#090d12" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#090d12" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Studio room background (removed in after.svg) -->
+  <rect width="800" height="600" fill="url(#wallGrad)" />
+  <polygon points="80,0 380,0 640,410 180,410" fill="url(#lightBeam)" />
+  <rect x="64" y="54" width="160" height="230" rx="8" fill="#182230" stroke="#2d3c52" stroke-width="2" />
+  <rect x="82" y="72" width="124" height="194" rx="4" fill="#223044" />
+  <circle cx="144" cy="144" r="36" fill="#334763" />
+  <path d="M82 232l44-42 36 32 24-20 20 30v34H82v-34Z" fill="#2b3d54" />
+  <circle cx="670" cy="128" r="46" fill="#3b4d68" opacity="0.35" />
+  <rect x="0" y="395" width="800" height="205" fill="url(#tableGrad)" />
+  <line x1="0" y1="395" x2="800" y2="395" stroke="#5b4736" stroke-width="2" />
+
+  <!-- Ambient table shadow -->
+  <ellipse cx="400" cy="442" rx="228" ry="26" fill="url(#dropShadow)" />
+
+  <!-- Subject: Rangefinder studio camera (identical coordinates in after.svg) -->
+  <g id="subject-camera">
+    <!-- Strap lugs -->
+    <rect x="176" y="246" width="16" height="24" rx="4" fill="#94a3b8" />
+    <rect x="608" y="246" width="16" height="24" rx="4" fill="#94a3b8" />
+
+    <!-- Shutter & mode dials -->
+    <rect x="242" y="148" width="46" height="22" rx="4" fill="#64748b" />
+    <rect x="248" y="152" width="34" height="14" rx="2" fill="#94a3b8" />
+    <rect x="524" y="144" width="52" height="26" rx="5" fill="#475569" />
+    <circle cx="550" cy="144" r="16" fill="#cbd5e1" />
+    <rect x="470" y="156" width="36" height="14" rx="3" fill="#64748b" />
+
+    <!-- Hot shoe -->
+    <rect x="366" y="156" width="68" height="14" rx="3" fill="#94a3b8" />
+
+    <!-- Top aluminum plate -->
+    <path d="M190 218c0-26 14-48 40-48h340c26 0 40 22 40 48v24H190v-24Z" fill="url(#topPlate)" />
+    <rect x="190" y="236" width="420" height="6" fill="#475569" />
+
+    <!-- Viewfinder window & flash sensor -->
+    <rect x="228" y="184" width="56" height="38" rx="6" fill="#0f172a" stroke="#475569" stroke-width="2" />
+    <rect x="236" y="191" width="40" height="24" rx="3" fill="#1e3a8a" />
+    <circle cx="248" cy="199" r="5" fill="#93c5fd" opacity="0.65" />
+    <rect x="302" y="194" width="24" height="18" rx="4" fill="#1e293b" stroke="#64748b" stroke-width="1.5" />
+
+    <!-- Main leatherette camera body -->
+    <rect x="190" y="242" width="420" height="194" rx="18" fill="url(#bodyMetal)" />
+    <rect x="202" y="252" width="396" height="174" rx="12" fill="#141a24" stroke="#283345" stroke-width="1.5" />
+
+    <!-- Grip contour -->
+    <rect x="536" y="252" width="62" height="174" rx="12" fill="#1b2230" />
+    <circle cx="566" cy="276" r="8" fill="#ef4444" />
+
+    <!-- Base plate -->
+    <rect x="190" y="422" width="420" height="14" rx="4" fill="#64748b" />
+
+    <!-- Lens barrel -->
+    <circle cx="395" cy="336" r="106" fill="#334155" stroke="#94a3b8" stroke-width="3" />
+    <circle cx="395" cy="336" r="94" fill="#1e293b" stroke="#475569" stroke-width="2" />
+    <circle cx="395" cy="336" r="80" fill="#0f172a" stroke="#64748b" stroke-width="2" />
+    <circle cx="395" cy="336" r="64" fill="url(#lensGlass)" stroke="#334155" stroke-width="3" />
+    <circle cx="395" cy="336" r="34" fill="#070b14" stroke="#1e293b" stroke-width="2" />
+
+    <!-- Lens reflections -->
+    <ellipse cx="372" cy="312" rx="18" ry="11" transform="rotate(-28 372 312)" fill="#bae6fd" opacity="0.55" />
+    <circle cx="424" cy="362" r="8" fill="#8b5cf6" opacity="0.45" />
+    <circle cx="436" cy="374" r="4" fill="#60a5fa" opacity="0.6" />
+  </g>
+</svg>
